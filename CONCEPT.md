@@ -55,7 +55,7 @@ Level-up view: this is a recommender system with a hard constraint layer. Think 
 Reviewer finding is only half the delay. The other half is reviewers sitting on it. Levers:
 
 - **Recognition** — verified, DOI-stamped review credits (like Publons / Web of Science Reviewer Recognition), plus annual certificates and a public profile.
-- **Payment (optional, publisher-set)** — flat honorarium per review (e.g. £100-300) or APC-funded credits. Some publishers already do this; the platform handles escrow and payout. Reviewers can route fees to a charity or their lab.
+- **Payment (core mechanic)** — the journal sets a flat honorarium per review (e.g. £100-300). The platform holds it in escrow when a reviewer accepts, releases it when the editor approves the review, and keeps a percentage cut. Reviewers can route fees to a charity or their lab. This is the primary revenue line, not an add-on.
 - **Reciprocity credits** — review one, jump the queue when you submit. Works best for society journals and megajournals.
 - **Speed nudges** — shorter default deadlines with structured review templates (10-minute triage vs. full review), progress bars, automatic reminders, and reliability scores that reward on-time delivery.
 
@@ -72,9 +72,9 @@ Reviewer finding is only half the delay. The other half is reviewers sitting on 
 
 | Model | Who pays | Notes |
 |---|---|---|
-| **SaaS per journal** (primary) | Publisher | Tiered by manuscript volume. Predictable, sells to procurement. |
+| **Cut of reviewer honoraria** (primary) | Publisher, via the honorarium | 10-15% of every paid review that completes. Scales with usage, zero friction to adopt. |
+| **SaaS per journal** | Publisher | Tiered by manuscript volume, for journals that want matching without paying reviewers. |
 | **Per-match fee** | Publisher | Pay only for completed reviews; good for small journals and pilots. |
-| **Payment rails cut** | Publisher | 10-15% on any honoraria flowing through the platform. |
 | **API licensing** | Submission-system vendors | Embed the matcher into Editorial Manager etc. |
 
 Reviewers never pay. Ever.
@@ -118,7 +118,6 @@ Gap: nobody combines *matching + verified availability + incentives + COI* in on
 
 ## 12. Open questions
 
-- Is payment core or optional? (Changes the go-to-market and the ethics posture.)
 - Marketplace (reviewer opts in) vs. tool (editor searches a database)? This draft assumes marketplace.
 - Single field first, or horizontal from day one?
 - Which submission system to integrate first? OJS is easiest, Editorial Manager has the most volume.
