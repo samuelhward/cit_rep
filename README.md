@@ -6,6 +6,7 @@ Prototype engine for a peer-review marketplace: match manuscripts to qualified, 
 - `SCOPE.md` — technical scope of this prototype
 - `docs/GUIDE.md` — **start here**: an intuitive walkthrough of how everything works
 - `docs/ASSESSMENT.md` — how well it works, and where it doesn't
+- `docs/SECURITY.md` — what data we hold, what we outsource, what we must do ourselves
 - `eval/REPORT.md` — generated metrics
 
 ## Run it
